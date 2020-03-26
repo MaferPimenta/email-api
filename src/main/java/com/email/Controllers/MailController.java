@@ -51,7 +51,8 @@ public class MailController {
         prop.put("mail.smtp.port", port);
         prop.put("mail.smtp.user", user);
         prop.put("mail.smtp.password", password);
-        prop.put("mail.smtp.auth", false);
+        prop.put("mail.smtp.auth", "true");
+        prop.put("mail.smtp.starttls.enable", "true");
 
         javax.mail.Authenticator auth = new javax.mail.Authenticator() {
             @Override
